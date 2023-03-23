@@ -23,31 +23,9 @@
         <!-- Custom CSS or JS library -->
         <link rel="stylesheet" type="text/css" href="styles/style.css" />
         <!-- <script type="text/javascript" src="http://uwa.netvibes.com/lib/c/UWA/js/UWA_Standalone_Alone.js"></script> -->
-        <div id="shopping-list">
-            <div class="header">
-              <h1>{{header || "Welcome"}}</h1>
-              <button v-if="editing" @click="onEdit(false)" class="btn btn-cancel">Cancel</button>
-              <button v-else @click="onEdit(true)" class="btn btn-primry">Add Item</button>
-            </div>
-            <div class="add-item-form" v-if="editing">
-              <input @keyup.enter="saveItem" v-model="newItem" type="text" placeholder="Add an item">
-              <label>
-                <input type="checkbox" v-model="newItemHighPriority"> High priority
-              </label>
-              <button :disabled="newItem.length===0" @click="saveItem" class="btn btn-primary">Save Item</button>
-            </div>
-            <p v-if="items.length===0">You have bougth all your items!</p>
-            <ul>
-              <li v-for="item in reversedItems" :class="{strikeout: item.purchased, priority: item.highPriority}"
-              @click="togglePurchased(item)" 
-              class="static-class" :key="item.id">{{item.label}}
-            </li>
-            </ul>
-          </div>
-          <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
         <script>
-            var host = 'https://city-base-script.netlify.app', // URL of server
-                project = ''; // folder referencing to your project resources
+            // var host = 'https://city-base-script.netlify.app', // URL of server
+            //     project = ''; // folder referencing to your project resources
 
             // AMD loader setting. For complete documentation, refer to https://requirejs.org/docs/whyamd.html
             // require.config({
