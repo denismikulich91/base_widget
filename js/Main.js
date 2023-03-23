@@ -27,8 +27,8 @@ define
                 let count2 = 0;
                 var container = document.createElement('div');
                 container.className = 'test'
-                var button = document.createElement('uwa-carousel-button');
-                button.className = 'button'
+                var button = document.createElement('button');
+                button.className = 'uwa-carousel-button'
                 button.innerText = 'click me';
 
                 const text = document.createElement('div');
