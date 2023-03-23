@@ -51,6 +51,10 @@ define
                 container.appendChild(text);
                 widget.body.innerHTML = '';
                 widget.body.appendChild(container);
+                container2.appendChild(button2);
+                container2.appendChild(text2);
+                // widget.body.innerHTML = '';
+                widget.body.appendChild(container2);
             },
 
             onResize: function() {
