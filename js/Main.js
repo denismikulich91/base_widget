@@ -47,7 +47,7 @@ define
             },
 
             onResize: function() {
-                console.info("onResize");
+                console.info("Has been resized by DMH5");
             },
 
             onViewChange: function() {
