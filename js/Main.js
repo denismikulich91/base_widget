@@ -29,7 +29,7 @@ define
                 const button = document.createElement('button');
                 button.innerText = 'click me';
                 const text = document.createElement('div');
-                const container2 = document.createElement('div');
+                // const container2 = document.createElement('div');
                 const button2 = document.createElement('button');
                 button2.innerText = 'click me2';
                 const text2 = document.createElement('div');
@@ -51,11 +51,11 @@ define
                 container.appendChild(button);
                 container.appendChild(text);
                 widget.body.innerHTML = '';
-                widget.body.appendChild(container);
-                container2.appendChild(button2);
-                container2.appendChild(text2);
+                // widget.body.appendChild(container);
+                container.appendChild(button2);
+                container.appendChild(text2);
                 widget.body.innerHTML = '';
-                widget.body.appendChild(container2);
+                widget.body.appendChild(container);
             },
 
             onResize: function() {
