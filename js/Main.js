@@ -25,7 +25,7 @@ define
                 console.log("Widget is running nowhere!");
                 let count = 0;
                 let count2 = 0;
-                var container = document.createElement('div');
+                const container = document.createElement('div');
                 const button = document.createElement('button');
                 button.innerText = 'click me';
                 const text = document.createElement('div');
