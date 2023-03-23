@@ -44,6 +44,39 @@ define
                 container.appendChild(text);
                 widget.body.innerHTML = '';
                 widget.body.appendChild(container);
+                const shoppingList = Vue.createApp({
+                    data(){
+                      return{
+                        header: 'Shopping list app',
+                        newItem: '',
+                        newItemHighPriority: false,
+                        editing: false,
+                        items: [
+                          {id: 1, label: "10 party hats", purchased: true, highPriority: false},
+                          {id: 2, label: "2 board games", purchased: true, highPriority: true},
+                          {id: 3, label: "20 cups", purchased: false, highPriority: true}
+                      ]
+                      }
+                    },
+                    computed:{
+                      reversedItems(){
+                        return [...this.items].reverse()
+                      }
+                    },
+                    methods: {
+                      saveItem(){
+                       this.items.push({id: this.items.length + 1, label: this.newItem, highPriority: this.newItemHighPriority }); 
+                       this.newItem=''
+                      },
+                      onEdit(editing){
+                        this.editing = editing
+                        this.newItem = ""
+                      },
+                      togglePurchased(item){
+                        item.purchased = !item.purchased
+                      }
+                    }
+                  }).mount('#shopping-list')
             },
 
             onResize: function() {
