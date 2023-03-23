@@ -37,8 +37,8 @@ define
                 })
 
                 console.info("Random number: " + Util.myFunction(10));
-                console.info(TEST);
-                console.info(PASSWORD);
+                console.info(TEST+5);
+                console.info(PASSWORD+5);
 
                 container.appendChild(button);
                 container.appendChild(text);
