@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:widget="http://www.netvibes.com/ns/">
     <head>
-        <title>T&M City111</title>
+        <title>Testing widget</title>
         <meta name="author" content="Kerim HUDAYBERDIYEV" />
         <meta name="description" content="Widget used to feed Vianova transport data into City" />
         <meta name="keywords" content="Transportation, mobility, connected vehicles data" />
@@ -25,7 +25,7 @@
         <!-- <script type="text/javascript" src="http://uwa.netvibes.com/lib/c/UWA/js/UWA_Standalone_Alone.js"></script> -->
 
         <script>
-            var host = 'https://widget-template.netlify.app', // URL of server
+            var host = 'https://city-base-script.netlify.app', // URL of server
                 project = ''; // folder referencing to your project resources
 
             // AMD loader setting. For complete documentation, refer to https://requirejs.org/docs/whyamd.html
@@ -65,6 +65,7 @@
                     widget.addEvent("endEdit", Main.endEdit);
                 }
             );
+            console.log("test info")
         </script>
     </head>
     <body>
