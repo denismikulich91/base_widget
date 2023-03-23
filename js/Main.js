@@ -33,7 +33,7 @@ define
 
                 button.addEventListener('click', () => {
                     count++;
-                    text.innerHTML = `The button has been clicked ${count} times`;
+                    text.innerHTML = `The buttton has been clicked ${count} times`;
                 })
 
                 console.info("Random number: " + Util.myFunction(10));

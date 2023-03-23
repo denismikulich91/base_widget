@@ -9,7 +9,7 @@ define
         
     )
     {
-        console.info('Util loaded');
+        console.info('Utillll loaded');
 
         // global variables (widget, UWA, document)
 
