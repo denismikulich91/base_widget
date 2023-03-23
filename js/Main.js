@@ -1,6 +1,6 @@
 define
 (
-    'Widget/js/Main',
+    'js/Main',
     [
         // 3DEXPERIENCE Cloud Platform JS modules 
         'DS/PlatformAPI/PlatformAPI',

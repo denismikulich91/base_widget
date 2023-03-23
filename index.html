@@ -31,14 +31,14 @@
             // AMD loader setting. For complete documentation, refer to https://requirejs.org/docs/whyamd.html
             require.config({
                 paths: {
-                    'Widget': host + project,
-                    'Modules': host + project + '/modules'
+                    // 'Widget': host + project,
+                    // 'Modules': host + project + '/modules'
                 }
             });
 
             require(
                 [
-                    "Widget/js/Main"
+                    "js/Main"
                 ],
                 function(
                     Main
