@@ -34,6 +34,7 @@ define
                 button2.innerText = 'click me2';
                 const text2 = document.createElement('div');
                 text2.innerHTML = "The button2 has been clicked 0 times";
+                text.innerHTML = "The button has been clicked 0 times";
 
                 button.addEventListener('click', () => {
                     count++;
