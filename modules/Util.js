@@ -24,7 +24,7 @@ define
             myFunction: function(arg1) {
                 console.info(arg1);
 
-                return getRandomNumber(arg1);
+                return getRandomNumber(arg1+154);
             }
         };
 
