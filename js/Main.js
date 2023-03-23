@@ -37,7 +37,6 @@ define
                     text.innerHTML = `The buttton has been clicked ${count} times`;
                 })
 
-                console.info("Random number: " + Util.myFunction(10));
                 console.info(TEST+5);
                 console.info(PASSWORD+5);
 
