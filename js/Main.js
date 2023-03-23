@@ -26,23 +26,22 @@ define
                 let count = 0;
                 let count2 = 0;
                 const container = document.createElement('div');
-                container.className("uwa-feedview-simplelist")
                 const button = document.createElement('button');
                 button.innerText = 'click me';
                 const text = document.createElement('div');
                 const container2 = document.createElement('div');
                 const button2 = document.createElement('button');
                 button2.innerText = 'click me';
-                const text2 = document.createElement('div');
+                const text2 = document.createElement('div', {class: "test"});
                 text2.innerHTML = "The button2 has been clicked 0 times";
 
                 button.addEventListener('click', () => {
                     count++;
-                    text.innerHTML = `The buttton has been clicked ${count} times`;
+                    text.innerHTML = `The buttton1 has been clicked ${count} times`;
                 })
                 button2.addEventListener('click', () => {
                     count2++;
-                    text2.innerHTML = `The buttton has been clicked ${count2} times`;
+                    text2.innerHTML = `The buttton2 has been clicked ${count2} times`;
                 })
 
                 console.info(TEST+5);
