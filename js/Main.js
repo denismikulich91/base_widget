@@ -18,11 +18,11 @@ define
         // Declare public functions or variables here. Accessible by other modules. Call it by "Main.<function>". Usage sample, e.g. Main.onLoad() 
         var exports = {
             onLoad: function() {
-                const TEST = prompt('Give test value:');
-                const PASSWORD = prompt('Enter password:');
+                const TEST = prompt('Give test value test:');
+                const PASSWORD = prompt('Enter password test:');
                 console.info("Global var widget", widget);
 
-                console.log("Widget is running!");
+                console.log("Widget is running nowhere!");
                 let count = 0;
                 const container = document.createElement('div');
                 const button = document.createElement('button');
