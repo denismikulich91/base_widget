@@ -23,8 +23,10 @@
         <!-- Custom CSS or JS library -->
         <link rel="stylesheet" type="text/css" href="styles/style.css" />
         <!-- <script type="text/javascript" src="http://uwa.netvibes.com/lib/c/UWA/js/UWA_Standalone_Alone.js"></script> -->
-
+        <h1>{{header}}</h1>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
         <script>
+            
             var host = 'https://widget-template.netlify.app', // URL of server
                 project = ''; // folder referencing to your project resources
 
@@ -65,6 +67,21 @@
                     widget.addEvent("endEdit", Main.endEdit);
                 }
             );
+            const shoppingList = Vue.createApp({
+            data(){
+                return{
+                header: 'Shopping list app',
+                newItem: '',
+                newItemHighPriority: false,
+                editing: false,
+                items: [
+                    {id: 1, label: "10 party hats", purchased: true, highPriority: false},
+                    {id: 2, label: "2 board games", purchased: true, highPriority: true},
+                    {id: 3, label: "20 cups", purchased: false, highPriority: true}
+                ]
+                }
+            },
+            }).mount('#shopping-list')
         </script>
     </head>
     <body>
