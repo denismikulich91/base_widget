@@ -31,7 +31,7 @@ define
                 const text = document.createElement('div');
                 const container2 = document.createElement('div');
                 const button2 = document.createElement('button');
-                button2.innerText = 'click me';
+                button2.innerText = 'click me2';
                 const text2 = document.createElement('div');
                 text2.innerHTML = "The button2 has been clicked 0 times";
 
