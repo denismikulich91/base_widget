@@ -25,14 +25,15 @@ define
                 console.log("Widget is running nowhere!");
                 let count = 0;
                 let count2 = 0;
-                const container = document.createElement('div');
+                var container = document.createElement('div');
+                container.className('classname')
                 const button = document.createElement('button');
                 button.innerText = 'click me';
                 const text = document.createElement('div');
                 const container2 = document.createElement('div');
                 const button2 = document.createElement('button');
                 button2.innerText = 'click me';
-                const text2 = document.createElement('div', {class: "test"});
+                const text2 = document.createElement('div');
                 text2.innerHTML = "The button2 has been clicked 0 times";
 
                 button.addEventListener('click', () => {
