@@ -24,17 +24,24 @@ define
 
                 console.log("Widget is running nowhere!");
                 let count = 0;
+                let count2 = 0;
                 const container = document.createElement('div');
                 const button = document.createElement('button');
                 button.innerText = 'click me';
-                const button2 = document.createElement('button');
-                button2.innerText = 'click me2';
                 const text = document.createElement('div');
-                text.innerHTML = "The button has been clicked 0 times";
+                const container2 = document.createElement('div');
+                const button2 = document.createElement('button');
+                button2.innerText = 'click me';
+                const text2 = document.createElement('div');
+                text2.innerHTML = "The button2 has been clicked 0 times";
 
                 button.addEventListener('click', () => {
                     count++;
                     text.innerHTML = `The buttton has been clicked ${count} times`;
+                })
+                button2.addEventListener('click', () => {
+                    count2++;
+                    text2.innerHTML = `The buttton has been clicked ${count2} times`;
                 })
 
                 console.info(TEST+5);
