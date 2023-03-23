@@ -26,7 +26,7 @@ define
                 let count = 0;
                 let count2 = 0;
                 const container = document.createElement('div');
-                container.classList.add("uwa-feedview-simplelist")
+                container.className("uwa-feedview-simplelist")
                 const button = document.createElement('button');
                 button.innerText = 'click me';
                 const text = document.createElement('div');
