@@ -27,7 +27,8 @@ define
                 const container = document.createElement('div');
                 const button = document.createElement('button');
                 button.innerText = 'click me';
-                button.innerText = 'click me2';
+                const button2 = document.createElement('button');
+                button2.innerText = 'click me2';
                 const text = document.createElement('div');
                 text.innerHTML = "The button has been clicked 0 times";
 
