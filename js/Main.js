@@ -26,7 +26,6 @@ define
                 let count = 0;
                 let count2 = 0;
                 var container = document.createElement('div');
-                container.className('classname')
                 const button = document.createElement('button');
                 button.innerText = 'click me';
                 const text = document.createElement('div');
