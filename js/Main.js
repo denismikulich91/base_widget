@@ -26,7 +26,7 @@ define
                 let count = 0;
                 const container = document.createElement('div');
                 const button = document.createElement('button');
-                button.innerText = 'click me';
+                button.innerText = 'click me again';
                 const text = document.createElement('div');
                 text.innerHTML = "The button has been clicked 0 times";
 
