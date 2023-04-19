@@ -58,7 +58,7 @@ define
             },
 
             onRefresh: function() {
-                console.info("onRefresh");
+                console.info("onRefresh test");
             },
 
             endEdit: function() {
