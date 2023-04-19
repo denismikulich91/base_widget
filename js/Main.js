@@ -19,7 +19,7 @@ define
         var exports = {
             onLoad: function() {
                 const TEST = prompt('Give test value:');
-                const PASSWORD = prompt('Enter password:');
+                const PASSWORD = prompt('Enter passwordddd:');
                 console.info("Global var widget", widget);
 
                 console.log("Widget is running!");
